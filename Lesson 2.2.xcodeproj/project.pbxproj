@@ -292,7 +292,7 @@
 				DEVELOPMENT_TEAM = PW3MRU3W8V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Lesson 2.2/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Lesson 2.2 - RGB";
+				INFOPLIST_KEY_CFBundleDisplayName = "Lesson2.2-rgb";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,7 +322,7 @@
 				DEVELOPMENT_TEAM = PW3MRU3W8V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Lesson 2.2/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Lesson 2.2 - RGB";
+				INFOPLIST_KEY_CFBundleDisplayName = "Lesson2.2-rgb";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
