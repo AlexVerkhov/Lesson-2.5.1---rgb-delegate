@@ -31,9 +31,11 @@ class SetColorViewController: UIViewController {
         updateColorView()
     }
     
+    
     @IBAction func buttonClosePressed() {
         dismiss(animated: true)
     }
+    
     
     @IBAction func buttonSavePressed() {
         view.endEditing(true)
@@ -41,12 +43,14 @@ class SetColorViewController: UIViewController {
         dismiss(animated: true)
     }
     
+    
     // заметил, что если isInit по умолчанию сделать равным true, то
     // при запуске функции при активации элементов интерфейса
     // isInit по умолчанию всегда будет равен false - почему так?
     //
     // мне пришлось для этого приравнять его false по умолчанию
     // и как было бы правильно в данной ситуации?
+    
     
     @IBAction func colorChangedBySliderOrTextField(sender: Any?, isInit: Bool = false) {
         if let colorSlider = sender as? UISlider {
@@ -81,8 +85,15 @@ class SetColorViewController: UIViewController {
         if !isInit { updateColorView() }
     }
     
+    
     func roundFloat(_ value: Float) -> Float {
         round(value * 100) / 100
+    }
+
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super .touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
 }
 
