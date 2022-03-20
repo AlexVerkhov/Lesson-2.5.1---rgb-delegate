@@ -39,13 +39,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		25081A4027E61D64008EB399 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		25081A4127E61D66008EB399 /* ViewContollers */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +89,6 @@
 			children = (
 				25081A4327E61DA4008EB399 /* Storyboards */,
 				25081A4127E61D66008EB399 /* ViewContollers */,
-				25081A4027E61D64008EB399 /* Models */,
 				25081A4227E61D68008EB399 /* App */,
 			);
 			path = "Lesson 2.5";
