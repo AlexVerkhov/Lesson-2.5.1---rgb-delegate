@@ -98,7 +98,7 @@ class SetColorViewController: UIViewController {
 }
 
 
-// MARK: COLOR FUNCTIONS
+// MARK: - Color Functions
 extension SetColorViewController {
    
     func setColorLabel(by value: Float, for element: Int) {
@@ -145,7 +145,7 @@ extension SetColorViewController {
 }
 
 
-// MARK: TEXTFIELD DELEGATE
+// MARK: - TextField Delegate
 extension SetColorViewController: UITextFieldDelegate {
     func addTextFieldToolBar(textField: UITextField) {
         let toolBar = UIToolbar()
@@ -187,7 +187,7 @@ extension SetColorViewController: UITextFieldDelegate {
 }
 
 
-// MARK: Protocol Delegate
+// MARK: - Protocol Delegate
 protocol setColorViewControllerDelegate {
     func setNewColor(_ color: UIColor)
 }
