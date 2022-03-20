@@ -187,7 +187,7 @@ extension SetColorViewController: UITextFieldDelegate {
 }
 
 
-// MARK: - Protocol Delegate
+// MARK: - Protocol Delegate 
 protocol setColorViewControllerDelegate {
     func setNewColor(_ color: UIColor)
 }
