@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25081A4527E6208E008EB399 /* PaleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25081A4427E6208E008EB399 /* PaleteViewController.swift */; };
 		252E850527D1E50500D348D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E850427D1E50500D348D2 /* AppDelegate.swift */; };
 		252E850727D1E50500D348D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E850627D1E50500D348D2 /* SceneDelegate.swift */; };
-		252E850927D1E50500D348D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E850827D1E50500D348D2 /* ViewController.swift */; };
+		252E850927D1E50500D348D2 /* SetColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E850827D1E50500D348D2 /* SetColorViewController.swift */; };
 		252E850C27D1E50500D348D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252E850A27D1E50500D348D2 /* Main.storyboard */; };
 		252E850E27D1E50600D348D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 252E850D27D1E50600D348D2 /* Assets.xcassets */; };
 		252E851127D1E50600D348D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252E850F27D1E50600D348D2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		252E850127D1E50500D348D2 /* Lesson 2.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lesson 2.2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25081A4427E6208E008EB399 /* PaleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaleteViewController.swift; sourceTree = "<group>"; };
+		252E850127D1E50500D348D2 /* Lesson 2.5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lesson 2.5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		252E850427D1E50500D348D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		252E850627D1E50500D348D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		252E850827D1E50500D348D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		252E850827D1E50500D348D2 /* SetColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetColorViewController.swift; sourceTree = "<group>"; };
 		252E850B27D1E50500D348D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		252E850D27D1E50600D348D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		252E851027D1E50600D348D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,10 +39,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25081A4027E61D64008EB399 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		25081A4127E61D66008EB399 /* ViewContollers */ = {
+			isa = PBXGroup;
+			children = (
+				25081A4427E6208E008EB399 /* PaleteViewController.swift */,
+				252E850827D1E50500D348D2 /* SetColorViewController.swift */,
+			);
+			path = ViewContollers;
+			sourceTree = "<group>";
+		};
+		25081A4227E61D68008EB399 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				252E850427D1E50500D348D2 /* AppDelegate.swift */,
+				252E850627D1E50500D348D2 /* SceneDelegate.swift */,
+				252E850D27D1E50600D348D2 /* Assets.xcassets */,
+				252E851227D1E50600D348D2 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		25081A4327E61DA4008EB399 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				252E850A27D1E50500D348D2 /* Main.storyboard */,
+				252E850F27D1E50600D348D2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		252E84F827D1E50500D348D2 = {
 			isa = PBXGroup;
 			children = (
-				252E850327D1E50500D348D2 /* Lesson 2.2 */,
+				252E850327D1E50500D348D2 /* Lesson 2.5 */,
 				252E850227D1E50500D348D2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +86,28 @@
 		252E850227D1E50500D348D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				252E850127D1E50500D348D2 /* Lesson 2.2.app */,
+				252E850127D1E50500D348D2 /* Lesson 2.5.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		252E850327D1E50500D348D2 /* Lesson 2.2 */ = {
+		252E850327D1E50500D348D2 /* Lesson 2.5 */ = {
 			isa = PBXGroup;
 			children = (
-				252E850427D1E50500D348D2 /* AppDelegate.swift */,
-				252E850627D1E50500D348D2 /* SceneDelegate.swift */,
-				252E850827D1E50500D348D2 /* ViewController.swift */,
-				252E850A27D1E50500D348D2 /* Main.storyboard */,
-				252E850D27D1E50600D348D2 /* Assets.xcassets */,
-				252E850F27D1E50600D348D2 /* LaunchScreen.storyboard */,
-				252E851227D1E50600D348D2 /* Info.plist */,
+				25081A4327E61DA4008EB399 /* Storyboards */,
+				25081A4127E61D66008EB399 /* ViewContollers */,
+				25081A4027E61D64008EB399 /* Models */,
+				25081A4227E61D68008EB399 /* App */,
 			);
-			path = "Lesson 2.2";
+			path = "Lesson 2.5";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		252E850027D1E50500D348D2 /* Lesson 2.2 */ = {
+		252E850027D1E50500D348D2 /* Lesson 2.5 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 252E851527D1E50600D348D2 /* Build configuration list for PBXNativeTarget "Lesson 2.2" */;
+			buildConfigurationList = 252E851527D1E50600D348D2 /* Build configuration list for PBXNativeTarget "Lesson 2.5" */;
 			buildPhases = (
 				252E84FD27D1E50500D348D2 /* Sources */,
 				252E84FE27D1E50500D348D2 /* Frameworks */,
@@ -82,9 +117,9 @@
 			);
 			dependencies = (
 			);
-			name = "Lesson 2.2";
+			name = "Lesson 2.5";
 			productName = "Lesson 2.2";
-			productReference = 252E850127D1E50500D348D2 /* Lesson 2.2.app */;
+			productReference = 252E850127D1E50500D348D2 /* Lesson 2.5.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 252E84FC27D1E50500D348D2 /* Build configuration list for PBXProject "Lesson 2.2" */;
+			buildConfigurationList = 252E84FC27D1E50500D348D2 /* Build configuration list for PBXProject "Lesson 2.5" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				252E850027D1E50500D348D2 /* Lesson 2.2 */,
+				252E850027D1E50500D348D2 /* Lesson 2.5 */,
 			);
 		};
 /* End PBXProject section */
@@ -138,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				252E850927D1E50500D348D2 /* ViewController.swift in Sources */,
+				252E850927D1E50500D348D2 /* SetColorViewController.swift in Sources */,
 				252E850527D1E50500D348D2 /* AppDelegate.swift in Sources */,
 				252E850727D1E50500D348D2 /* SceneDelegate.swift in Sources */,
+				25081A4527E6208E008EB399 /* PaleteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,12 +327,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PW3MRU3W8V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Lesson 2.2/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Lesson2.2-rgb";
+				INFOPLIST_FILE = "Lesson 2.5/App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Lesson2.5-rgb-delegate";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,11 +340,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "AlexVerkhov.Lesson-2-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexVerkhov.Lesson-2-5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,12 +357,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PW3MRU3W8V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Lesson 2.2/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Lesson2.2-rgb";
+				INFOPLIST_FILE = "Lesson 2.5/App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Lesson2.5-rgb-delegate";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,18 +370,18 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "AlexVerkhov.Lesson-2-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexVerkhov.Lesson-2-5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		252E84FC27D1E50500D348D2 /* Build configuration list for PBXProject "Lesson 2.2" */ = {
+		252E84FC27D1E50500D348D2 /* Build configuration list for PBXProject "Lesson 2.5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				252E851327D1E50600D348D2 /* Debug */,
@@ -354,7 +390,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		252E851527D1E50600D348D2 /* Build configuration list for PBXNativeTarget "Lesson 2.2" */ = {
+		252E851527D1E50600D348D2 /* Build configuration list for PBXNativeTarget "Lesson 2.5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				252E851627D1E50600D348D2 /* Debug */,
