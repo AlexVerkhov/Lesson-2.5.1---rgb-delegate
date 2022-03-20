@@ -16,9 +16,11 @@ class PaleteViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "setColorSegue" else { return }
+       
         // 1. Правильно ли сносить в данном кейсе "..as?" таким образом?
         // 2. Когда нет необходимости объявлять класс для NavigationController, как понял,
         //    остается использовать его стандартный класс
+        
         guard let setColorNavigationController = segue.destination
             as? UINavigationController else { return }
         guard let setColorViewController = setColorNavigationController.topViewController
