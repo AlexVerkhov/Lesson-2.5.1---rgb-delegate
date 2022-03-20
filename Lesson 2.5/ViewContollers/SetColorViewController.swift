@@ -9,15 +9,21 @@ import UIKit
 
 class SetColorViewController: UIViewController {
 
+    
+    // MARK: - IBOutlets
     @IBOutlet var colorView: UIView!
     
     @IBOutlet var colorLabels: [UILabel]!
     @IBOutlet var colorSliders: [UISlider]!
     @IBOutlet var colorTextFields: [UITextField]!
     
+    
+    // MARK: - Public prop
     var currentColor: UIColor!
     var delegate: setColorViewControllerDelegate!
     
+    
+    // MARK: - Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
         colorView.layer.cornerRadius = 20
@@ -32,6 +38,13 @@ class SetColorViewController: UIViewController {
     }
     
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super .touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
+    
+    // MARK: - IBActions
     @IBAction func buttonClosePressed() {
         dismiss(animated: true)
     }
@@ -86,44 +99,39 @@ class SetColorViewController: UIViewController {
     }
     
     
-    func roundFloat(_ value: Float) -> Float {
+    // MARK: - Private methods
+    private func roundFloat(_ value: Float) -> Float {
         round(value * 100) / 100
-    }
-
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super .touchesBegan(touches, with: event)
-        view.endEditing(true)
     }
 }
 
 
-// MARK: - Color Functions
+// MARK: - Color private methods
 extension SetColorViewController {
    
-    func setColorLabel(by value: Float, for element: Int) {
+    private func setColorLabel(by value: Float, for element: Int) {
         colorLabels[element].text = String(format: "%0.2f", value)
     }
     
     
-    func setColorTextField(by value: Float, for element: Int) {
+    private func setColorTextField(by value: Float, for element: Int) {
         colorTextFields[element].text = String(roundFloat(value))
     }
     
     
-    func setColorSlider(by value: Float, for element: Int) {
+    private func setColorSlider(by value: Float, for element: Int) {
         colorSliders[element].value = roundFloat(value)
     }
     
 
-    func setColorSliders(by rgbColors: [Float]) {
+    private func setColorSliders(by rgbColors: [Float]) {
         for sliderIndex in 0..<colorSliders.count {
             colorSliders[sliderIndex].value = rgbColors[sliderIndex]
         }
     }
     
     
-    func updateColorView() {
+    private func updateColorView() {
         currentColor = UIColor(
             red: CGFloat(colorSliders[0].value),
             green: CGFloat(colorSliders[1].value),
@@ -133,7 +141,7 @@ extension SetColorViewController {
     }
     
     
-    func colorToRGB(_ color: UIColor) -> [Float] {
+    private func colorToRGB(_ color: UIColor) -> [Float] {
         var redColorValue: CGFloat = 0
         var greenColorValue: CGFloat = 0
         var blueColorValue: CGFloat = 0
@@ -147,7 +155,7 @@ extension SetColorViewController {
 
 // MARK: - TextField Delegate
 extension SetColorViewController: UITextFieldDelegate {
-    func addTextFieldToolBar(textField: UITextField) {
+    private func addTextFieldToolBar(textField: UITextField) {
         let toolBar = UIToolbar()
         let doneButton = UIBarButtonItem(
             title: textField.tag < 2 ? "Next" : "Done",
@@ -169,12 +177,12 @@ extension SetColorViewController: UITextFieldDelegate {
     // функции как objective-c, так как
     // использовать без @objc не получилось. Без селектора также не получилось
     
-    @objc func textFieldCancelButtonPressed() {
+    @objc private func textFieldCancelButtonPressed() {
         view.endEditing(true)
     }
     
     
-    @objc func textFieldNextButtonPressed(sender: UIBarButtonItem?) {
+    @objc private func textFieldNextButtonPressed(sender: UIBarButtonItem?) {
         guard let barButtonTapped = sender else { return }
         
         if barButtonTapped.tag < 2 {
@@ -187,7 +195,7 @@ extension SetColorViewController: UITextFieldDelegate {
 }
 
 
-// MARK: - Protocol Delegate 
+// MARK: - Protocol Delegate
 protocol setColorViewControllerDelegate {
     func setNewColor(_ color: UIColor)
 }
