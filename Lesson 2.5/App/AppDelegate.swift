@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Lesson 2.2
+//  Lesson 2.5
 //
 //  Created by Алексей Верховых on 04.03.2022.
 //
